@@ -8,5 +8,5 @@ QUnit.test("Függvény-E?", (assert) => {
     assert.ok(typeof unit === "function");
   });
   QUnit.test("Szám: 15", (assert) => {
-    assert.equal(unit(15), "5");
+    assert.equal(unit(15), 5);
   });

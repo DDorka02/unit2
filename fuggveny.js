@@ -1,4 +1,5 @@
 function unit(szam) {
+
     if (szam === undefined) {
       return "Nincs paraméter";
     }
@@ -8,10 +9,10 @@ function unit(szam) {
     if (isNaN(szam)) {
       return "Nem szám a bemenet";
     }
-    
     szam = parseInt(szam);
     if (szam <= 0){
       return "Pozitív szám lehet csak a bemenet!"
     }
 
+    return Math.abs(parseInt(szam)) % 10;
   }
